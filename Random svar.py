@@ -1,10 +1,11 @@
 import random
 svar = ["There is no cake.", "The cake is a lie.",
-        "Love the cube!", "We do what we must because we can.", "Apparature science!"]
-text = ""
+        "Love the cube!", "We do what we must because we can.", "Apparature science!"]      # Array with possible responses
+
+text = ""       # Condition for while loop
 
 while text == "":
-    input("Skriv en fråga: ")
+    input("Skriv en fråga: ")                   # Input with no inpact other than presenting a random response
     random_num = random.randint(1, 10)
     if random_num >= 5:
         print(svar[3])
